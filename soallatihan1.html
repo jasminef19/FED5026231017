@@ -19,7 +19,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background: #325585;
+            background: #135789;
             color: white;
             padding-top: 20px;
             transition: width 0.3s;
@@ -87,14 +87,28 @@
         }
         
         .sidebar a:hover {
-            background: #495057;
+            background: #53606c;
         }
         
         .sidebar .active {
-            background: #0d395b;
+            background: rgba(12, 55, 95, 0.5);
             color: white; /* Ensure text is visible */
             border-radius: 8px; /* Add rounded corners */
             transition: background 0.3s, margin 0.3s; /* Smooth transition */
+        }
+
+        .sidebar .logout {
+            background: rgba(255, 255, 255, 0.5);
+            color: white !important;
+            border: 1 px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            padding: 10px 20px;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .sidebar .logout:hover {
+            background: rgba(255, 255, 255, 0.5);
         }
         
         /* Toggle Button Styles */
@@ -139,18 +153,16 @@
         }
 
         .white-box {
-            background-color: white;
             width: 700px; /* Set width to create a square */
             height: auto; /* Allow height to adjust based on content */
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 30px auto; /* Center the box horizontally */
             text-align: center; /* Center the text inside the white box */
             padding: 20px; /* Add padding for spacing */
         }
 
         .blue-rectangle {
-            background-color: #325585; /* Blue color */
+            background-color: #135789; /* Blue color */
             width: 200px; /* Set width for the rectangle */
             height: 40px; /* Set height for the rectangle */
             margin: 20px auto 0; /* Center the rectangle horizontally */
@@ -211,17 +223,17 @@
             <i class="fa fa-angle-double-left"></i> 
         </label>
         <div class="logo">
-            <img src="C:\Users\jasmi\PWEB\FED5026231017\latihan1\Frame 40792-6.png" class="profile-img">
+            <img src="Frame 40792-6.png" class="profile-img">
             <div class="profile-info">
                 <span class="profile-text">User</span>
                 <span class="profile-email">user@mail.com</span> <!-- Added email below the name -->
             </div>
         </div>
-        <a href="#"><i class="fa fa-home"></i> Helperlog</a>
-        <a href="#"class="active"><i class="fa fa-user"></i> Helperfind</a>
-        <a href="#"><i class="fa fa-cogs"></i> Helperassist</a> <!-- New menu item -->
+        <a href="#"><div><i class="far fa-check-square" style="font-size: 20px;"></i>&nbsp; Helperlog</div></a>
+        <a href="#"class="active"><div><i class="fa-solid fa-magnifying-glass"></i>&nbsp; Helperfind</div></a>
+        <a href="#"><div><i class="far fa-comment-alt"></i>&nbsp; Helperassist</div></a> 
     </div>
-    <a href="#" class="text-white, active" style="align-self: center; margin-bottom: 20px;"><i class="fa fa-sign-out-alt"></i> Logout</a>
+    <a href="#" class="logout" style="align-self: center; margin-bottom: 20px;"><i class="fa fa-sign-out"></i> Logout</a>
 </div>
 <!-- Hamburger Menu for Opening Sidebar -->
 <label for="toggleSidebarCheckbox" class="btn toggle-btn open-btn">
@@ -229,9 +241,9 @@
 </label>
 <!-- Content -->
 <div class="content">
-    <h2><i class= "fa fa-arrow-left"></i><b>Pengajuan Kontrak</b></h2>
-    <div class="white-box">
-        <img src="C:\Users\jasmi\PWEB\FED5026231017\latihan1\Group 8449.png" alt="Image" style="max-width: 50%; height: auto; margin-bottom: 20px;">
+    <h2><i class= "fa fa-arrow-left"></i><b>&nbsp; Pengajuan Kontrak</b></h2>
+    <div class="shadow lg p-3 mb-5 bg-body rounded white-box">
+        <img src="Group 8449.png" alt="Image" style="max-width: 50%; height: auto; margin-bottom: 20px;">
         <h3><b>Ajuan Kontak Berhasil Dibuat</b></h3>
         <p>Ajuan kontrak anda dengan nomor id #xxxx untuk PRT atas nama YYY sudah berhasil dibuat dan sedang menunggu proses review oleh admin. Silahkan mengecek progres ajuan kontrak anda pada laman berikut</p>
         <div class="blue-rectangle">
